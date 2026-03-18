@@ -53,9 +53,10 @@ de los clientes, y por negociar precios que incorporen parte del costo financier
 ofertados por la compañía. Y, la **gerencia general** que demanda una visión integral de los escenarios
 de uso de factoring y sobregiros, para definir políticas comerciales y financieras de mediano plazo.
 
-3.  **Problema identificado** (explicación de la situación anómala detectada)
+## 3.  **Problema identificado** (explicación de la situación anómala detectada)
 
-Para comprender mejor la situación problemática se presenta un paralelo de causas y efectos relacionados con ella en donde las causas se subclasifican, pero los efectos se generalizan:
+Para comprender mejor la situación problemática se presenta un paralelo de causas y efectos relacionados
+con ella en donde las causas se subclasifican, pero los efectos se generalizan:
 
 <table>
 <colgroup>
@@ -71,15 +72,21 @@ Para comprender mejor la situación problemática se presenta un paralelo de cau
 <tr class="odd">
 <td><p>Por la gestión financiera:</p>
 <ul>
-<li><p>Uso intensivo de factoring, dada una estructura de cupos de crédito internos, para evitar la detención de ventas cuando los clientes los copan y pagan entre 30 a 60 días, es decir, mantener la necesidad imperiosa de liquidez.</p></li>
+<li><p>Uso intensivo de factoring, dada una estructura de cupos de crédito internos, para evitar
+la detención de ventas cuando los clientes los copan y pagan entre 30 a 60 días, es decir, mantener
+la necesidad imperiosa de liquidez.</p></li>
 <li><p>Dependencia de sobregiros bancarios para cumplir pagos a proveedores cuando no se recurre al factoring.</p></li>
-<li><p>Negociaciones comerciales que frecuentemente obvian incorporar explícitamente el costo financiero en el precio final de los productos ofertados por la empresa.</p></li>
+<li><p>Negociaciones comerciales que frecuentemente obvian incorporar explícitamente el costo financiero
+en el precio final de los productos ofertados por la empresa.</p></li>
 </ul></td>
 <td><p><strong>Por el manejo de la información</strong>:</p>
 <ul>
-<li><p>Existencia de información dispersa en distintas fuentes (facturación, cupos, tasas, cuentas bancarias, condiciones comerciales), sin un proceso formal de ETL que consolide y limpie los datos para análisis riguroso.</p></li>
-<li><p>Falta de un análisis sistemático de datos que identifique el punto de equilibrio entre factoring, sobregiros y alternativas como la posibilidad de implementar programas de pronto pago.</p></li>
-<li><p>Ausencia de modelos de escenarios que cuantifiquen el impacto de las políticas de uso del factoring y los sobregiros en los gastos financieros y las ventas.</p></li>
+<li><p>Existencia de información dispersa en distintas fuentes (facturación, cupos, tasas, cuentas bancarias,
+condiciones comerciales), sin un proceso formal de ETL que consolide y limpie los datos para análisis riguroso.</p></li>
+<li><p>Falta de un análisis sistemático de datos que identifique el punto de equilibrio entre factoring,
+sobregiros y alternativas como la posibilidad de implementar programas de pronto pago.</p></li>
+<li><p>Ausencia de modelos de escenarios que cuantifiquen el impacto de las políticas de uso del factoring
+y los sobregiros en los gastos financieros y las ventas.</p></li>
 </ul></td>
 </tr>
 </tbody>
@@ -97,20 +104,27 @@ Para comprender mejor la situación problemática se presenta un paralelo de cau
 <tbody>
 <tr class="odd">
 <td><ul>
-<li><p>Gastos financieros anuales entre 1.500 y 2.000 millones de pesos solo por el rubro de gastos financieros asociados a factoring y sobregiros.</p></li>
-<li><p>Disminución de la rentabilidad al cierre del periodo y menor capacidad para invertir en otros proyectos estratégicos.</p></li>
-<li><p>Riesgo de decisiones subóptimas, por ejemplo, usar factoring por costumbre sin evidencia del punto de equilibrio con sobregiro.</p></li>
-<li><p>Conflicto de objetivos entre el área comercial (mantener ventas) y el área financiera (reducir gastos financieros), sin un marco de datos unificado para negociar decisiones.</p></li>
+<li><p>Gastos financieros anuales entre 1.500 y 2.000 millones de pesos solo por el rubro de gastos financieros
+asociados a factoring y sobregiros.</p></li>
+<li><p>Disminución de la rentabilidad al cierre del periodo y menor capacidad para invertir en otros proyectos
+estratégicos.</p></li>
+<li><p>Riesgo de decisiones subóptimas, por ejemplo, usar factoring por costumbre sin evidencia del punto
+de equilibrio con sobregiro.</p></li>
+<li><p>Conflicto de objetivos entre el área comercial (mantener ventas) y el área financiera
+(reducir gastos financieros), sin un marco de datos unificado para negociar decisiones.</p></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-Con base en lo expuesto se puede identificar un problema de gestión financiera manifestado por la existencia de gastos financieros elevados relacionados con el uso combinado de los instrumentos financieros conocidos como factoring y sobregiros, que reducen significativamente la rentabilidad anual del Ingenio Carmelita S.A.
+Con base en lo expuesto se puede identificar un problema de gestión financiera manifestado por la existencia
+de gastos financieros elevados relacionados con el uso combinado de los instrumentos financieros conocidos
+como factoring y sobregiros, que reducen significativamente la rentabilidad anual del Ingenio Carmelita S.A.
 
-4.  **Fuentes de datos** (especificación de las posibles fuentes de datos)
+## 4.  **Fuentes de datos** (especificación de las posibles fuentes de datos)
 
-La especificación de las posibles fuentes de datos se describe en tres categorías, como muestra el siguientes esquema:
+La especificación de las posibles fuentes de datos se describe en tres categorías, como muestra el siguientes
+esquema:
 
 <table>
 <colgroup>
@@ -124,10 +138,17 @@ La especificación de las posibles fuentes de datos se describe en tres categor�
 <tbody>
 <tr class="odd">
 <td><ul>
-<li><p>Sistema de facturación y cartera: facturas emitidas (fecha, cliente, monto, plazo, tasa implícita si la hay). Estados de cuenta de clientes, cupos asignados, cupo utilizado, cupo disponible. Información sobre facturas cedidas en factoring (fecha de cesión, tasa, entidad financiera, valor anticipado).</p></li>
-<li><p>Sistema contable y financiero: registro de gastos financieros por factoring y sobregiros por periodo (mensual, anual). Tasas de interés pactadas con cada banco para sobregiros y factoring. Estados de sobregiros por banco, cupos autorizados y utilizados.</p></li>
-<li><p>Sistema de compras y proveedores: calendario de pagos a proveedores, montos y fechas. Historial de uso de sobregiros para cubrir pagos a proveedores.</p></li>
-<li><p>Información comercial: condiciones comerciales por cliente (precios por quintal, descuentos, acuerdos de pronto pago). Historial de negociaciones donde se haya intentado incorporar el costo financiero al precio de venta.</p></li>
+<li><p>Sistema de facturación y cartera: facturas emitidas (fecha, cliente, monto, plazo, tasa implícita
+si la hay). Estados de cuenta de clientes, cupos asignados, cupo utilizado, cupo disponible. Información
+sobre facturas cedidas en factoring (fecha de cesión, tasa, entidad financiera, valor anticipado).</p></li>
+<li><p>Sistema contable y financiero: registro de gastos financieros por factoring y sobregiros por periodo
+(mensual, anual). Tasas de interés pactadas con cada banco para sobregiros y factoring. Estados de sobregiros
+por banco, cupos autorizados y utilizados.</p></li>
+<li><p>Sistema de compras y proveedores: calendario de pagos a proveedores, montos y fechas. Historial de uso
+de sobregiros para cubrir pagos a proveedores.</p></li>
+<li><p>Información comercial: condiciones comerciales por cliente (precios por quintal, descuentos, acuerdos
+de pronto pago). Historial de negociaciones donde se haya intentado incorporar el costo financiero al precio
+de venta.</p></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -135,7 +156,8 @@ La especificación de las posibles fuentes de datos se describe en tres categor�
 </tr>
 <tr class="odd">
 <td><ul>
-<li><p>Correos, memorandos o minutas de reuniones de tesorería y comercial donde se discuten políticas de factoring, sobregiros y pronto pago.</p></li>
+<li><p>Correos, memorandos o minutas de reuniones de tesorería y comercial donde se discuten políticas
+de factoring, sobregiros y pronto pago.</p></li>
 <li><p>Plantillas Excel usadas por analistas para cálculos ad hoc<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> de gastos financieros.</p></li>
 </ul></td>
 </tr>
@@ -157,7 +179,8 @@ La especificación de las posibles fuentes de datos se describe en tres categor�
 </ol>
 </aside>
 
-Con lo expuesto en el esquema se entiende que el problema identificado es susceptible de ser enfrentado con datos.
+Con lo expuesto en el esquema se entiende que el problema identificado es susceptible de ser enfrentado
+con datos.
 
 5.  **Definición de los OKR y KPIs** (especificación de los Objetivos y Resultados Clave e Indicadores Clave de Rendimiento)
 
