@@ -23,7 +23,7 @@ Las justificaciones de las elecciones tecnológicas se expresan en los siguiente
 
 **Git y GitHub:** con estas tecnologías la gestión de versiones y de la colaboración garantiza la trazabilidad del desarrollo del trabajo de final de curso.
 
-## 4.2 Arquitectura de la Canalización ETL y su Viabilidad Técnica {#arquitectura-de-la-canalización-etl-y-su-viabilidad-técnica}
+## 4.2 Arquitectura de la Canalización ETL y su Viabilidad Técnica
 
 La arquitectura de la canalización ETL queda definida por el siguiente flujo de datos:
 
