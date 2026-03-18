@@ -1,4 +1,4 @@
-# Definición del Problema
+# Definición del Problema y su Contexto
 
 El objetivo de este documento es definir el **Contexto** y el **Problema** por enfrentar 
 como trabajo final del curso de **ETL** (extracción, transformación y carga).
