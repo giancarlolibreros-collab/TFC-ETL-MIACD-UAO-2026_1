@@ -236,28 +236,52 @@ sobre gastos financieros (en términos absolutos y relativos).
 Estos OKR y KPIs propuestos se entiende que están alineados con las posibilidades de que las fuentes de datos
 provean lo que corresponda.
 
-6.  **Formulación de las preguntas estratégicas o de negocio para responder con el Pipeline**[^4] **ETL** (canalización ETL)
+## 6.  **Formulación de las preguntas estratégicas o de negocio para responder con el Pipeline**[^4] **ETL** (canalización ETL)
 
-Son propuestas las siguientes preguntas para que con el soporte de la canalización ETL se puedan ayudar a responder como apoyo para la toma de decisiones en referencia al problema de gestión financiera planteado en el inciso 3 de este documento:
+Son propuestas las siguientes preguntas para que con el soporte de la canalización ETL se puedan ayudar
+a responder como apoyo para la toma de decisiones en referencia al problema de gestión financiera planteado
+en el inciso 3 de este documento:
 
-> ¿Cuál es el costo financiero promedio efectivo (por peso facturado) de utilizar factoring frente al de utilizar sobregiros, por periodo?
+> ¿Cuál es el costo financiero promedio efectivo (por peso facturado) de utilizar factoring
+frente al de utilizar sobregiros, por periodo?
 >
-> ¿Cuál es el punto de equilibrio (en volumen de facturas o monto) a partir del cual conviene más el factoring que el sobregiro, o viceversa, bajo las tasas actuales de los bancos?
+> ¿Cuál es el punto de equilibrio (en volumen de facturas o monto) a partir del cual conviene más
+el factoring que el sobregiro, o viceversa, bajo las tasas actuales de los bancos?
 >
-> ¿Qué impacto tendría reducir el gasto financiero, actualmente entre 1.500 y 2.000 millones, a 800 millones aplicando un plan de descuento por pronto pago (si la gerencia general y la dirección financiera toman la decisión de implementarlo), sobre la rentabilidad y el flujo de caja?
+> ¿Qué impacto tendría reducir el gasto financiero, actualmente entre 1.500 y 2.000 millones, a 800 millones
+aplicando un plan de descuento por pronto pago (si la gerencia general y la dirección financiera
+toman la decisión de implementarlo), sobre la rentabilidad y el flujo de caja?
 >
-> ¿Cómo cambian los días promedio de cartera y el uso de cupos de crédito internos si se aplica un plan de descuento por pronto pago?
+> ¿Cómo cambian los días promedio de cartera y el uso de cupos de crédito internos si se aplica
+un plan de descuento por pronto pago?
 >
-> ¿Qué combinación de instrumentos (porcentaje de facturas con factoring, nivel de sobregiro, porcentaje de clientes en pronto pago) minimiza el gasto financiero manteniendo o mejorando el nivel de ventas?
+> ¿Qué combinación de instrumentos (porcentaje de facturas con factoring, nivel de sobregiro, 
+porcentaje de clientes en pronto pago) minimiza el gasto financiero manteniendo o mejorando el nivel de ventas?
 >
-> ¿En qué medida las decisiones comerciales de precio final aplicado a los productos ofertado por la empresa compensan el costo financiero sin perder competitividad?
+> ¿En qué medida las decisiones comerciales de precio final aplicado a los productos ofertado
+por la empresa compensan el costo financiero sin perder competitividad?
 
-Las preguntas formuladas muestran que se captura la lógica causal necesaria para enfrentar un problema basado en datos que requiere una canalización ETL como apoyo para la toma de decisiones, en este caso de gestión financiera, que faciliten acceder de manera efectiva a los datos generados por la empresa y por terceros en el contexto indicado.
+Las preguntas formuladas muestran que se captura la lógica causal necesaria para enfrentar un problema
+basado en datos que requiere una canalización ETL como apoyo para la toma de decisiones, en este caso
+de gestión financiera, que faciliten acceder de manera efectiva a los datos generados por la empresa
+y por terceros en el contexto indicado.
 
-[^1]: El **factoring** es un instrumento financiero de corto plazo mediante el cual una empresa vende o cede sus facturas pendientes de cobro (cuentas por cobrar) a una entidad financiera o empresa especializada (llamada "factor"), a cambio de liquidez inmediata, aunque con un descuento. El factoring permite que una empresa adelante el cobro de sus ventas a crédito, a cambio de una comisión para el factor, así: en lugar de esperar los 30, 60 o 90 días que fijó el cliente, la empresa de manos del factor recibe un porcentaje del valor de las facturas en efectivo de forma rápida, mientras el factor asume la gestión de cobro y, en algunos casos, el riesgo de impago.
+[^1]: El **factoring** es un instrumento financiero de corto plazo mediante el cual una empresa vende
+o cede sus facturas pendientes de cobro (cuentas por cobrar) a una entidad financiera o empresa especializada
+(llamada "factor"), a cambio de liquidez inmediata, aunque con un descuento. El factoring permite
+que una empresa adelante el cobro de sus ventas a crédito, a cambio de una comisión para el factor, así: 
+en lugar de esperar los 30, 60 o 90 días que fijó el cliente, la empresa de manos del factor
+recibe un porcentaje del valor de las facturas en efectivo de forma rápida, mientras el factor
+asume la gestión de cobro y, en algunos casos, el riesgo de impago.
 
-[^2]: Un **sobregiro** bancario es una situación en la que una cuenta corriente, de ahorros o similar queda con saldo negativo porque el cliente efectúa pagos o retiros que exceden el dinero disponible en la cuenta y el banco acepta de igual manera la operación.
+[^2]: Un **sobregiro** bancario es una situación en la que una cuenta corriente, de ahorros o similar
+queda con saldo negativo porque el cliente efectúa pagos o retiros que exceden el dinero disponible
+en la cuenta y el banco acepta de igual manera la operación.
 
-[^3]: Smart-data financiero hace referencia a la aplicación de datos inteligentes en el ámbito financiero, es decir, datos financieros que han sido filtrados, procesados y analizados para que sean relevantes, precisos y usables en la toma de decisiones financieras, económicas y de negocio.
+[^3]: Smart-data financiero hace referencia a la aplicación de datos inteligentes en el ámbito financiero,
+es decir, datos financieros que han sido filtrados, procesados y analizados para que sean relevantes,
+precisos y usables en la toma de decisiones financieras, económicas y de negocio.
 
-[^4]: Un Pipeline ETL o Canalización ETL es un flujo de trabajo automatizado que extrae datos de una o varias fuentes, los transforma; es decir, limpia, integra y adapta, y luego los carga en un sistema de destino, por ejemplo, un almacén de datos, un lago de datos o una base de datos analítica.
+[^4]: Un Pipeline ETL o Canalización ETL es un flujo de trabajo automatizado que extrae datos de una o varias
+fuentes, los transforma; es decir, limpia, integra y adapta, y luego los carga en un sistema de destino,
+por ejemplo, un almacén de datos, un lago de datos o una base de datos analítica.
