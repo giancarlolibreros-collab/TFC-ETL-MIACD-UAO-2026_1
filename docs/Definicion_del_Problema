@@ -11,17 +11,32 @@ de la Fundación Universitaria Los Libertadores; a la fecha se desempeña como d
 del Sistema de Regionalización de la Universidad del Valle en las áreas de matemáticas, física,
 estadística y gestión de datos.
 
-Bajo compromiso previo de trabajo, los proponentes decidieron desarrollar entre ambos, y mientras sea posible, los trabajos exigidos en los cursos de la maestría para aprovechar el acceso de primera mano a fuentes de datos financieras sobre la empresa azucarera que es reconocida como una de las de tipo agroindustriales más importantes del suroccidente colombiano, que aporta, en sus mejores temporadas productivas, hasta un 5 % de la producción colombiana de azúcar y alrededor de 800.000 toneladas de caña molida al año, y que exporta azúcar y mieles a más de 25 países, con crecimiento reciente en el mercado ecuatoriano, chileno y de Estados Unidos de Norteamérica.
+Bajo compromiso previo de trabajo, los proponentes decidieron desarrollar entre ambos, y mientras
+sea posible, los trabajos exigidos en los cursos de la maestría para aprovechar el acceso de primera
+mano a fuentes de datos financieras sobre la empresa azucarera que es reconocida como una de las de tipo
+agroindustriales más importantes del suroccidente colombiano, que aporta, en sus mejores temporadas
+productivas, hasta un 5 % de la producción colombiana de azúcar y alrededor de 800.000 toneladas de caña
+molida al año, y que exporta azúcar y mieles a más de 25 países, con crecimiento reciente en el mercado
+ecuatoriano, chileno y de Estados Unidos de Norteamérica.
 
-Así, las siguientes especificaciones de **Contexto** y **Problema** están relacionados con aspectos de dicho sector productivo.
+Así, las siguientes especificaciones de **Contexto** y **Problema** están relacionados con aspectos
+de dicho sector productivo.
 
-1.  **Contexto** (dónde ocurre la necesidad o problema identificado)
+## 1.  **Contexto** (dónde ocurre la necesidad o problema identificado)
 
-El aspecto problemático por enfrentar se sitúa en el Ingenio Carmelita S.A., empresa del sector azucarero del Valle del Cauca, cuya operación requiere altos niveles de capital de trabajo y una gestión cuidadosa de la liquidez. Para sostener el volumen de ventas, especialmente con grandes superficies y clientes de alto cupo, el ingenio utiliza instrumentos financieros como el **factoring**[^1] y los **sobregiros**[^2] bancarios con entidades como Bancolombia, Davivienda y Banco de Bogotá, para lo cual asume gastos financieros, pero, con posibilidades de optimizar la elección de bancos, productos y condiciones de uso de los esos instrumentos.
+El aspecto problemático por enfrentar se sitúa en el Ingenio Carmelita S.A., empresa del sector azucarero
+del Valle del Cauca, cuya operación requiere altos niveles de capital de trabajo y una gestión cuidadosa
+de la liquidez. Para sostener el volumen de ventas, especialmente con grandes superficies y clientes
+de alto cupo, el ingenio utiliza instrumentos financieros como el **factoring**[^1] y los **sobregiros**[^2] bancarios
+con entidades como Bancolombia, Davivienda y Banco de Bogotá, para lo cual asume gastos financieros, pero,
+con posibilidades de optimizar la elección de bancos, productos y condiciones de uso de los esos instrumentos.
 
-A través del factoring, el ingenio cede sus facturas a varias entidades financieras para obtener liquidez inmediata, mientras que el cliente les paga a los bancos en plazos de 30 a 60 días. Esta práctica, necesaria para evitar cuellos de botella comerciales y liberar cupos de crédito a clientes, ha generado gastos financieros anuales estimados entre 1.500 y 2.000 millones de pesos solo por intereses financieros asociados al factoring y sobregiros.
+A través del factoring, el ingenio cede sus facturas a varias entidades financieras para obtener
+liquidez inmediata, mientras que el cliente les paga a los bancos en plazos de 30 a 60 días. Esta práctica, necesaria
+para evitar cuellos de botella comerciales y liberar cupos de crédito a clientes, ha generado gastos financieros
+anuales estimados entre 1.500 y 2.000 millones de pesos solo por intereses financieros asociados al factoring y sobregiros.
 
-2.  **Caracterización del usuario** (perfil del usuario o cliente)
+## 2.  **Caracterización del usuario** (perfil del usuario o cliente)
 
 El usuario principal es el área de **planeación financiera** del Ingenio Carmelita S.A., en particular el **analista de crédito y riesgo** responsable del análisis de los gastos financieros. Este rol requiere balancear la necesidad de liquidez inmediata con la presión por mantener la rentabilidad de la compañía y controlar el nivel de gastos financieros, dentro de los límites de cupos de crédito definidos para cada cliente.
 
