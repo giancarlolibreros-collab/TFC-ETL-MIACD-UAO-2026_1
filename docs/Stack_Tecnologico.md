@@ -1,4 +1,4 @@
-# 4. Stack Tecnológico de la Canalización ETL
+# Stack Tecnológico de la Canalización ETL
 
 La definición del stack tecnológico responde a tres criterios fundamentales: alineación con el currículo del curso de ETL[^1] (Python, SQL y herramientas ETL especializadas), viabilidad técnica en el entorno académico disponible (UAO[^2], equipos propios), y coherencia con las capacidades técnicas del equipo de trabajo. El stack tecnológico propuesto cubre las tres fases de la canalización: Extracción, Transformación, Carga, además de la Visualización y Reportes.
 
