@@ -2,7 +2,7 @@
 
 La definición del stack tecnológico responde a tres criterios fundamentales: alineación con el currículo del curso de ETL[^1] (Python, SQL y herramientas ETL especializadas), viabilidad técnica en el entorno académico disponible (UAO[^2], equipos propios), y coherencia con las capacidades técnicas del equipo de trabajo. El stack tecnológico propuesto cubre las tres fases de la canalización: Extracción, Transformación, Carga, además de la Visualización y Reportes.
 
-## 4.1 Visión General del Stack Tecnológico y su Justificación {#visión-general-del-stack-tecnológico-y-su-justificación}
+## 4.1 Visión General del Stack Tecnológico y su Justificación
 
 El panorama del stack tecnológico queda definida como se muestra a continuación:
 
