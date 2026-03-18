@@ -123,7 +123,7 @@ como factoring y sobregiros, que reducen significativamente la rentabilidad anua
 
 ## 4.  **Fuentes de datos** (especificación de las posibles fuentes de datos)
 
-La especificación de las posibles fuentes de datos se describe en tres categorías, como muestra el siguientes
+La especificación de las posibles fuentes de datos se describe en tres categorías, como muestra el siguiente
 esquema:
 
 <table>
@@ -182,27 +182,36 @@ de factoring, sobregiros y pronto pago.</p></li>
 Con lo expuesto en el esquema se entiende que el problema identificado es susceptible de ser enfrentado
 con datos.
 
-5.  **Definición de los OKR y KPIs** (especificación de los Objetivos y Resultados Clave e Indicadores Clave de Rendimiento)
+## 5.  **Definición de los OKR y KPIs** (especificación de los Objetivos y Resultados Clave e Indicadores Clave de Rendimiento)
 
 Los objetivos y resultados clave (OKR) por alcanzar al enfrentar el problema quedan propuestos así:
 
-> **OKR1**: Reducir el peso de los gastos financieros asociados a factoring y sobregiros en la operación del ingenio, sin sacrificar el nivel de ventas.
+> **OKR1**: Reducir el peso de los gastos financieros asociados a factoring y sobregiros en la operación
+del ingenio, sin sacrificar el nivel de ventas.
 >
-> ***OKR1.1***: Disminuir el gasto financiero anual por factoring y sobregiros comprendido entre 1.500 y 2.000 millones de pesos a un rango entre 800 y 1.200 millones en un horizonte de 1 a 2 años.
+> ***OKR1.1***: Disminuir el gasto financiero anual por factoring y sobregiros comprendido
+entre 1.500 y 2.000 millones de pesos a un rango entre 800 y 1.200 millones en un horizonte de 1 a 2 años.
 >
-> ***OKR1.2***: Mantener o incrementar en al menos un 3 % a 5 % el volumen de ventas a clientes de grandes superficies durante el mismo periodo.
+> ***OKR1.2***: Mantener o incrementar en al menos un 3 % a 5 % el volumen de ventas a clientes
+de grandes superficies durante el mismo periodo.
 >
-> **OKR2**: Optimizar la mezcla de instrumentos financieros (factoring y sobregiros) a partir de evidencia basada en datos.
+> **OKR2**: Optimizar la mezcla de instrumentos financieros (factoring y sobregiros) a partir de evidencia
+basada en datos.
 >
-> ***OKR2.1***: Definir y documentar un punto de equilibrio cuantitativo entre el uso de factoring y sobregiro para los principales clientes según plazos.
+> ***OKR2.1***: Definir y documentar un punto de equilibrio cuantitativo entre el uso de factoring
+y sobregiro para los principales clientes según plazos.
 >
-> ***OKR2.2***: Diseñar al menos un escenario de programa de pronto pago que redireccione parte de los gastos financieros hacia descuentos por pronto pago.
+> ***OKR2.2***: Diseñar al menos un escenario de programa de pronto pago que redireccione parte
+de los gastos financieros hacia descuentos por pronto pago.
 >
-> **OKR3**: Consolidar un pipeline ETL (o canalización ETL) automatizado que soporte el análisis recurrente de decisiones financieras y comerciales.
+> **OKR3**: Consolidar un pipeline ETL (o canalización ETL) automatizado que soporte el análisis recurrente
+de decisiones financieras y comerciales.
 >
-> ***OKR3.1***: Implementar un flujo ETL que integre fuentes de datos (por ejemplo, de facturación, contabilidad y bancos) y lo cargue en una base de datos analítica o smart-data[^3] financiero.
+> ***OKR3.1***: Implementar un flujo ETL que integre fuentes de datos (por ejemplo, de facturación, 
+contabilidad y bancos) y lo cargue en una base de datos analítica o smart-data[^3] financiero.
 >
-> ***OKR3.2***: Generar reportes periódicos (mensuales) con indicadores clave para las direcciones financiera y comercial, que responden a la gerencia general.
+> ***OKR3.2***: Generar reportes periódicos (mensuales) con indicadores clave para las direcciones financiera
+y comercial, que responden a la gerencia general.
 
 Ahora, los indicadores claves de rendimiento (KPIs) se proponen a través de la siguiente lista:
 
@@ -218,11 +227,14 @@ Ahora, los indicadores claves de rendimiento (KPIs) se proponen a través de la 
 
 - Porcentaje de uso de cupos de sobregiro por entidad financiera.
 
-- Margen neto por unidades de medida de los productos ofertados por la empresa vendidos a clientes clave, antes y después de incorporar el costo financiero en el precio.
+- Margen neto por unidades de medida de los productos ofertados por la empresa vendidos a clientes clave,
+antes y después de incorporar el costo financiero en el precio.
 
-- Monto anual de descuentos otorgados por programas de pronto pago (si se implementan) y su efecto sobre gastos financieros (en términos absolutos y relativos).
+- Monto anual de descuentos otorgados por programas de pronto pago (si se implementan) y su efecto
+sobre gastos financieros (en términos absolutos y relativos).
 
-Estos OKR y KPIs propuestos se entiende que están alineados con las posibilidades de que las fuentes de datos provean lo que corresponda.
+Estos OKR y KPIs propuestos se entiende que están alineados con las posibilidades de que las fuentes de datos
+provean lo que corresponda.
 
 6.  **Formulación de las preguntas estratégicas o de negocio para responder con el Pipeline**[^4] **ETL** (canalización ETL)
 
