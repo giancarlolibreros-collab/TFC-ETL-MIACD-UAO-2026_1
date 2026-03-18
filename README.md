@@ -20,4 +20,4 @@ Quienes estén interesados o requieran orientación o ayuda pueden contactar a l
 
 ## Who maintains and contributes to the project :: ¿Quién(es) mantiene(n) y contribuye(n) al proyecto?
 
-En principio estas labores son hechas por el CP. Esp. Brayan Valencia Sánchez y el Ing. Esp. Giancarlo Libreros Londoño, quien al momento de escribir la primera versión de este README son estudiantes de la maestría en Inteligencia Artificial y Ciencias de Datos de la Universidad Autónoma de Occidente (2026-1).
+En principio estas labores son hechas por el CP. Esp. Brayan Valencia Sánchez y el Ing. Esp. Giancarlo Libreros Londoño, quienes al momento de escribir la primera versión de este README son estudiantes de la maestría en Inteligencia Artificial y Ciencias de Datos de la Universidad Autónoma de Occidente (2026-1).
