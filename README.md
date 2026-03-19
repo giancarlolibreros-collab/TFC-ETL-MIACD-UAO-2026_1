@@ -27,6 +27,7 @@ TFC-ETL-MIACD-UAO-2026_1/
 ├── requirements.txt
 └── README.md
 ```
+NOTA: por confidencialidad la carpeta `data/` carece de versionado.
 ## What the project does :: ¿Qué hace el proyecto?
 
 Los procesos de ETL (Extract, Transform and Load) son fundamentales para obtener valor y tomar decisiones basadas en datos, en el sentido de que preparan los datos para análisis avanzados y la toma de decisiones informadas. Así, extraer datos de diversas fuentes, limpiar y transformar estos en formatos adecuados para el análisis, y finalmente cargarlos en bases de datos facilitan su exploración y modelado. Con base en lo dicho, el TFC respaldado por este repositorio muestra cómo afrontar las fases ETL para un problema basado en datos en el ámbito financiero relacionado con un ingenio azucarero del Valle del Cauca.
