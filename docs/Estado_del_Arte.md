@@ -1,6 +1,6 @@
 # Estado del Arte
 
-Este estado del arte busca sustentar con fuentes bibliográficas verificables y actualizadas las decisiones técnicas de canalización de datos relacionadas con el problema abordado sobre gestión financiera. Así, la búsqueda de literatura se organizó en torno a cuatro ejes temáticos: canalizaciones ETL en el sector financiero; factoring en Colombia y Latinoamérica; y la gestión del capital de trabajo y los costos financieros en empresas agroindustriales.
+Este estado del arte busca sustentar con fuentes bibliográficas verificables y actualizadas las decisiones técnicas de canalización de datos relacionadas con el problema abordado sobre gestión financiera. Así, la búsqueda de literatura se organizó en torno a tres ejes temáticos: canalizaciones ETL en el sector financiero; factoring en Colombia y Latinoamérica; y la gestión del capital de trabajo y los costos financieros en empresas agroindustriales.
 
 ## 1. Canalizaciones ETL en el Sector Financiero
 
