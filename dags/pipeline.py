@@ -4,6 +4,10 @@
 # Maestría en IA y Ciencia de Datos - UAO | Curso ETL | 2026-1
 # =============================================================================
 
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from src.extraccion import (
     renombrar_archivos,
     extraer_intereses_sobregiro,
