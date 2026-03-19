@@ -258,7 +258,7 @@ def resumen_extraccion(df_sobregiro, df_factoring, df_tasas):
 
 if __name__ == "__main__":
     print()
-    print("  PIPELINE ETL - INGENIO CARMELITA S.A.")
+    print("  PIPELINE ETL EMPRESA")
     print("  Proceso de Extracción | Avance 2")
     print()
 
