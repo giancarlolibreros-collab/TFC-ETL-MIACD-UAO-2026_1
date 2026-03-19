@@ -48,6 +48,47 @@ En el tercero, se registra la caracterización de las fuentes de datos en térmi
 
 En el cuarto, se muestra la definición del stack tecnológico definido con base en tres criterios fundamentales: alineación con el currículo del curso de ETL  (Python, SQL y herramientas ETL especializadas), viabilidad técnica en el entorno académico disponible (UAO , equipos propios), y coherencia con las capacidades técnicas del equipo de trabajo. El stack tecnológico propuesto cubre las tres fases de la canalización: Extracción, Transformación, Carga, además de la Visualización y Reportes.
 
+Luego de las lecturas contextuales puede se puede proceder con la ejecución de la canalización ETL, o de sus componentes, así:
+
+### 1. Clonar el repositorio:
+```bash
+git clone https://github.com//TFC-ETL-MIACD-UAO-2026_1.git
+cd TFC-ETL-MIACD-UAO-2026_1
+```
+### 2. Crear y activar el entorno virtual:
+```bash
+python -m venv venv
+venv\Scripts\Activate.ps1
+```
+### 3. Instalar las dependencias:
+```bash
+pip install -r requirements.txt
+```
+### 4. Colocar los archivos de datos en la carpeta `data/raw/`:
+```
+data/raw/Intereses Sobregiro.xlsx
+data/raw/tasas sobregiro.xlsx
+data/raw/COMISIONES AÑO 2025.xlsx
+```
+> Los archivos de datos carecen de versionamiento, por esto se debe contactar al equipo de trabajo para obetener acceso a ellos. 
+> La normalización de nombres se aplica automáticamente al ejecutar la canalización.
+---
+### 5.1 Cada módulo puede ejecutarse de forma independiente como prueba unitaria:
+```bash
+# Módulo de extracción
+python src/extraccion.py
+
+# Módulo de transformación (próximamente)
+# python src/transformacion.py
+
+# Módulo de carga (próximamente)
+# python src/carga.py
+```
+### 5.2 Para ejecutar la canalización ETL completa:
+```bash
+python dags/pipeline.py
+```
+
 ## Where users can get help with your project :: ¿Dónde pueden los usuarios obtener ayuda con el proyecto?
 
 Quienes estén interesados o requieran orientación o ayuda pueden contactar a los formuladores principales: CP. Esp. Brayan Valencia Sánchez (brayan.valencia_san@uao.edu.co) y el Ing. Esp. Giancarlo Libreros Londoño (giancarlo.libreros@uao.edu.co), a través de los correos electrónicos indicados.
