@@ -4,7 +4,7 @@ Este estado del arte busca sustentar con fuentes bibliográficas verificables y 
 
 ## 1. Canalizaciones ETL en el Sector Financiero
 
-Los procesos ETL son fundamentales en el sector financiero para integrar datos de múltiples fuentes --- por ejemplo. sistemas de facturación, contabilidad, bancos, gestión de clientes --- y producir información analítica que soporte decisiones sobre gestión del riesgo, cumplimiento, eficiencia en costos, entre otras.
+Los procesos ETL son fundamentales en el sector financiero para integrar datos de múltiples fuentes, por ejemplo, sistemas de facturación, contabilidad, bancos, gestión de clientes, entre otras, y producir información analítica que soporte decisiones sobre gestión del riesgo, cumplimiento, eficiencia en costos, entre otras.
 
 Coupler.io (2025) señala que la mayoría de los equipos financieros aún dependen de hojas de cálculo dispersas y exportaciones manuales de archivos de texto plano para gestionar sus datos, lo que genera inconsistencias a medida que crecen los volúmenes transaccionales. Esta descripción es semejante a la reflejada por la empresa objeto de estudio, donde las fuentes de factoring y sobregiros están en archivos .xlsx separados sin integración formal.
 
