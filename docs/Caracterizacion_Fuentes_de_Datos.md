@@ -1,8 +1,8 @@
-**Caracterización de las Fuentes de Datos**
+# Caracterización de las Fuentes de Datos
 
 Como alistamiento para desarrollar la canalización ETL propuesta en este proyecto, se presenta esta caracterización de las fuentes de datos en términos estructurales y de calidad. Se aclara que se hace sobre las fuentes originales, sin ninguna transformación hecha o cambio de formato de recepción. Complementariamente, la caracterización aplicada combina elementos metodológicos del estándar de facto Data Profiling, de DAMA-DMBOK, y de la ISO 25012.
 
-# 1. "COMISIONES AÑO 2025.xlsx" {#comisiones-año-2025.xlsx}
+## 1. "COMISIONES AÑO 2025.xlsx"
 
 Esta fuente registra comisiones bancarias y gastos de impuesto 4x1000 de la empresa objetivo durante el año 2025. Contiene múltiples hojas, incluyendo tablas dinámicas y una hoja de datos transaccionales principal. Su caracterización es la siguiente:
 
@@ -20,7 +20,7 @@ Esta fuente registra comisiones bancarias y gastos de impuesto 4x1000 de la empr
 | **Calidad general**       | Aceptable. Contiene hojas duplicadas o auxiliares y varias columnas completamente vacías que deben depurarse.                        |
 | **Formato**               | Excel (.xlsx) con tablas dinámicas en hojas TD.                                                                                      |
 
-# 2. "Intereses Sobregiro.xlsx" {#intereses-sobregiro.xlsx}
+## 2. "Intereses Sobregiro.xlsx"
 
 Esta fuente consigna los registros contables de movimientos asociados a intereses por sobregiro bancario. Contiene una sola hoja con datos transaccionales de todos los meses del año.
 
@@ -38,7 +38,7 @@ Esta fuente consigna los registros contables de movimientos asociados a interese
 | **Calidad general**                      | Buena en los registros válidos. Presenta columnas residuales sin nombre (Unnamed) y tipo de dato inconsistente en el campo Fecha. |
 | **Formato**                              | Excel (.xlsx) con una sola hoja de datos.                                                                                         |
 
-# 3. "tasas sobregiro.xlsx" {#tasas-sobregiro.xlsx}
+## 3. "tasas sobregiro.xlsx"
 
 Esta fuente consolida los cupos de crédito y las tasas de sobregiro vigentes por entidad bancaria. A diferencia de las otras fuentes, no-registra datos transaccional sino un documento de consulta con estructura semiestructurada.
 
