@@ -1,10 +1,10 @@
-**3. Estado del Arte**
+# Estado del Arte
 
 Este estado del arte busca sustentar con fuentes bibliográficas verificables y actualizadas las decisiones técnicas de canalización de datos relacionadas con el problema abordado sobre gestión financiera. Así, la búsqueda de literatura se organizó en torno a cuatro ejes temáticos: canalizaciones ETL en el sector financiero; factoring en Colombia y Latinoamérica; y la gestión del capital de trabajo y los costos financieros en empresas agroindustriales.
 
-**3.1 Canalizaciones ETL en el Sector Financiero**
+## 1. Canalizaciones ETL en el Sector Financiero
 
-Los procesos ETL son fundamentales en el sector financiero para integrar datos de múltiples fuentes --- por ejemplo. sistemas de facturación, contabilidad, bancos, gestión de clientes --- y producir información analítica que soporte decisiones sobre gestión del riesgo, cumplimiento, eficiencia en costos, entre otras.
+Los procesos ETL son fundamentales en el sector financiero para integrar datos de múltiples fuentes, por ejemplo, sistemas de facturación, contabilidad, bancos, gestión de clientes, entre otras, y producir información analítica que soporte decisiones sobre gestión del riesgo, cumplimiento, eficiencia en costos, entre otras.
 
 Coupler.io (2025) señala que la mayoría de los equipos financieros aún dependen de hojas de cálculo dispersas y exportaciones manuales de archivos de texto plano para gestionar sus datos, lo que genera inconsistencias a medida que crecen los volúmenes transaccionales. Esta descripción es semejante a la reflejada por la empresa objeto de estudio, donde las fuentes de factoring y sobregiros están en archivos .xlsx separados sin integración formal.
 
@@ -14,7 +14,7 @@ Asimismo, Integrate.io (2026) establece que las canalizaciones ETL financieras d
 
 En correspondencia con lo dicho, el artículo de Baazizi et al. (2019) propone una arquitectura de integración financiera en tiempo real que puede ser promovida por este trabajo de final de curso para desarrollos posteriores.
 
-**3.2 Factoring en Colombia y Latinoamérica**
+## 2. Factoring en Colombia y Latinoamérica
 
 El factoring es un instrumento de financiamiento de corto plazo con crecimiento acelerado en Colombia. Según cifras de la DIAN citadas en Portafolio (enero 2025), entre 2023 y agosto de 2024 se registraron más de 3,4 millones de facturas en sus sistemas, con 3,2 millones endosadas y un volumen de \$71,1 billones de pesos. Colombia es el cuarto país de Latinoamérica en volumen de factoring, con un crecimiento del 44 % en la región desde 2022.
 
@@ -24,7 +24,7 @@ El informe del PNUD (2024) sobre inclusión financiera digital en Colombia conte
 
 Grand View Research (2026) concluye con una proyección sobre el mercado colombiano de factoring inverso (reverse factoring) de alrededor de 4.482,9 millones de dólares USD en 2030, con una tasa de crecimiento anual compuesta del 18,9 % entre 2024 y 2030. Esto evidencia que el instrumento seguirá siendo relevante para el mediano plazo de la empresa objetivo.
 
-**3.3 Gestión del Capital de Trabajo y de los Costos Financieros en Empresas Agroindustriales**
+## 3. Gestión del Capital de Trabajo y de los Costos Financieros en Empresas Agroindustriales**
 
 Cherry Bekaert (2025) documenta que las empresas manufactureras que dependen del factoring o préstamos de corto plazo, como capital de trabajo, enfrentan una señal de alerta cuando el uso de financiamiento a corto plazo para cubrir gastos operativos se vuelve recurrente. Proponen como alternativa los programas de pronto pago y el análisis sistemático de los indicadores DSO (días promedio para cobrar ventas a crédito), DPO (días promedio para pagar a proveedores) y CCC (ciclo completo de conversión de inversiones en efectivo).
 
@@ -44,4 +44,7 @@ Como síntesis referencial bibliográfica se presentan las mencionadas antes en 
 | Cherry Bekaert. Key Working Capital Strategies for Manufacturers. cbh.com                                                  | Artículo especializado.                                      | 2025    | Gestión del capital de trabajo en manufactura: DSO, DPO y alternativas al factoring como pronto pago. KPIs del proyecto.                                                        |
 | Carijournals. The Influence of Cost Management Practices on Financial Performance --- Sugar Companies. carijournals.org    | Artículo académico.                                          | 2025    | Gestión de capital de trabajo en industrias azucareras. Efectos del costo de capital y alternativas de financiamiento. Contexto sectorial de la empresa objetivo.               |
 
-Para concluir, se puede mencionar que la revisión del estado del arte permitió identificar tres conclusiones relevantes para el proyecto: primera, que el uso de canalización ETL en finanzas está bien documentado a nivel técnico y académico, con herramientas consolidadas a nivel de software y de arquitecturas de soporte de datos, además de casos de implementación verificables, con indicación de que el stack tecnológico seleccionado está alineado con las mejores prácticas del sector. Segunda, que el factoring en Colombia es un instrumento financiero en plena expansión, con cifras verificadas; sin embargo, la literatura sobre optimización de gastos por factoring en empresas agroindustriales colombianas es escasa. Tercera, que la gestión del capital de trabajo en industrias azucareras ha sido estudiada principalmente en mercados africanos y asiáticos, y, por lo tanto, existe una brecha de investigación en el contexto latinoamericano y colombiano que el proyecto contribuye, en alguna medida, a estrechar, al proponer el desarrollo de una canalización ETL con datos reales de un ingenio azucarero del Valle del Cauca.
+Para concluir, se puede mencionar que la revisión del estado del arte permitió identificar tres conclusiones relevantes para el proyecto: 
+* Primera, que el uso de canalización ETL en finanzas está bien documentado a nivel técnico y académico, con herramientas consolidadas a nivel de software y de arquitecturas de soporte de datos, además de casos de implementación verificables, con indicación de que el stack tecnológico seleccionado está alineado con las mejores prácticas del sector.
+* Segunda, que el factoring en Colombia es un instrumento financiero en plena expansión, con cifras verificadas; sin embargo, la literatura sobre optimización de gastos por factoring en empresas agroindustriales colombianas es escasa.
+* Tercera, que la gestión del capital de trabajo en industrias azucareras ha sido estudiada principalmente en mercados africanos y asiáticos, y, por lo tanto, existe una brecha de investigación en el contexto latinoamericano y colombiano que el proyecto contribuye, en alguna medida, a estrechar, al proponer el desarrollo de una canalización ETL con datos reales de un ingenio azucarero del Valle del Cauca.
