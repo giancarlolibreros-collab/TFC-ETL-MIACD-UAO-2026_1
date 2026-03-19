@@ -253,13 +253,13 @@ def resumen_extraccion(df_sobregiro, df_factoring, df_tasas):
     print("=" * 60)
 
 # =============================================================================
-# EJECUCIÓN PRINCIPAL
+# EJECUCIÓN DIRECTA - PRUEBA UNITARIA DEL MÓDULO
 # =============================================================================
 
 if __name__ == "__main__":
     print()
-    print("  PIPELINE ETL EMPRESA")
-    print("  Proceso de Extracción | Avance 2")
+    print("  PRUEBA UNITARIA - MÓDULO DE EXTRACCIÓN")
+    print("  Ejecución directa de extraccion.py")
     print()
 
     # Paso 0: normalizar nombres de archivo antes de extraer
