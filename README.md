@@ -2,7 +2,7 @@
 
 Este repositorio se usa para alojar y permitir el desarrollo colaborativo, y con control de versiones, del trabajo de final de curso (TFC) "ETL (Extract, Transform and Load)" de la Maestría en Inteligencia Artificial y Ciencias de Datos (MIACD) de la Universidad Autónoma de Occidente (UAO) en el periodo 2026-1 (repositorio: TFC-ETL-MIACD-UAO-2026_1). Este repositorio tendrá la siguiente estructura:
 
-etl-[empresa]/
+etl-empresa/
 │
 ├── data/
 │   ├── raw/                    # Archivos originales
