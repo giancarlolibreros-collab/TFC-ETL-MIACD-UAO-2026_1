@@ -12,7 +12,15 @@ El proyecto captura la lógica causal necesaria para enfrentar un problema basad
 
 ## How users can get started with the project :: ¿Cómo pueden los usuarios empezar a usar el proyecto?
 
-Es fundamental que lean la documentación asociada con los reportes de avance uno y dos. En el primero, se consignan el contexto del problema basado en datos, las caracterizaciones de los usuarios::clientes, la formulación del problema identificado, las fuentes de datos asociadas con el problema, la definición de los objetivos y resultados clave (OKR) y los indicadores clave de rendimiento (KPI), y las preguntas estratégicas (o de negocio) soportadas por la canalización (pipeline) ETL. En el segundo, se registra la caracterización de las fuentes de datos, el estado del arte rastreado sobre el problema tratado y la especificación del stack tecnológico de la canalización ETL.
+Es fundamental leer, en el orden siguiente, la documentación asociada con los archivos: Definicion_del_Problema, Estado_del_Arte, Stack_Tecnologico y Caracterizacion_Fuentes_de_Datos, hospedados en la carpeta `docs`. 
+
+En el primero, se consignan el contexto del problema basado en datos, las caracterizaciones de los usuarios::clientes, la formulación del problema identificado, las fuentes de datos asociadas con el problema, la definición de los objetivos y resultados clave (OKR) y los indicadores clave de rendimiento (KPI), y las preguntas estratégicas (o de negocio) soportadas por la canalización (pipeline) ETL. 
+
+En el segundo, se exponen fuentes bibliográficas relevantes, verificables y actualizadas sobre las decisiones técnicas de canalización de datos relacionadas con el problema abordado de gestión financiera en torno a tres ejes temáticos: canalizaciones ETL en el sector financiero; factoring en Colombia y Latinoamérica; y la gestión del capital de trabajo y los costos financieros en empresas agroindustriales.
+
+En el tercero, se registra la caracterización de las fuentes de datos en términos estructurales y de calidad combinando elementos metodológicos del estándar de facto Data Profiling, de DAMA-DMBOK, y de la ISO 25012.
+
+En el cuarto, se muestra la definición del stack tecnológico definido con base en tres criterios fundamentales: alineación con el currículo del curso de ETL  (Python, SQL y herramientas ETL especializadas), viabilidad técnica en el entorno académico disponible (UAO , equipos propios), y coherencia con las capacidades técnicas del equipo de trabajo. El stack tecnológico propuesto cubre las tres fases de la canalización: Extracción, Transformación, Carga, además de la Visualización y Reportes.
 
 ## Where users can get help with your project :: ¿Dónde pueden los usuarios obtener ayuda con el proyecto?
 
