@@ -5,16 +5,16 @@ Este repositorio se usa para alojar y permitir el desarrollo colaborativo, y con
 etl-empresa/
 │
 ├── data/
-│   ├── raw/                    # Archivos originales
-│   └── processed/              # Archivos limpios
+│   ├── raw/
+│   └── processed/
 │
 ├── src/
-│   ├── extraccion.py       
-│   ├── transformacion.py   
-│   └── carga.py       
+│   ├── extraccion.py
+│   ├── transformacion.py
+│   └── carga.py
 │
 ├── dags/
-│   └── pipeline.py         
+│   └── pipeline.py
 │
 ├── docs/
 │   ├── Caracterizacion_Fuentes_de_Datos.md
