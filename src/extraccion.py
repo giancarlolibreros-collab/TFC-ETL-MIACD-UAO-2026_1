@@ -1,7 +1,7 @@
 # =============================================================================
 # FASE de EXTRACCIÓN [TFC-ETL-MIACD-UAO-2026_1]
 # Autores: Brayan Valencia Sánchez | Giancarlo Libreros Londoño
-# Maestría en IA y Ciencia de Datos - UAO | Curso ETL | 2026-1
+# Maestría en Inteligencia Artificial y Ciencia de Datos - UAO | Curso ETL | 2026-1
 # =============================================================================
 
 import os
