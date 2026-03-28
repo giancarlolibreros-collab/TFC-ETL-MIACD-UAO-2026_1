@@ -29,7 +29,7 @@ del Valle del Cauca, cuya operación requiere altos niveles de capital de trabaj
 de la liquidez. Para sostener el volumen de ventas, especialmente con grandes superficies y clientes
 de alto cupo, el ingenio utiliza instrumentos financieros como el **factoring**[^1] y los **sobregiros**[^2] bancarios
 con entidades como Bancolombia, Davivienda y Banco de Bogotá, para lo cual asume gastos financieros, pero,
-con posibilidades de optimizar la elección de bancos, productos y condiciones de uso de los esos instrumentos.
+con posibilidades de optimizar la elección de bancos, productos y condiciones de uso de esos instrumentos.
 
 A través del factoring, el ingenio cede sus facturas a varias entidades financieras para obtener
 liquidez inmediata, mientras que el cliente les paga a los bancos en plazos de 30 a 60 días. Esta práctica, necesaria
