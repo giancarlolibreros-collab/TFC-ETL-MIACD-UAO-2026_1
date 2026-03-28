@@ -70,7 +70,7 @@ con ella en donde las causas se subclasifican, pero los efectos se generalizan:
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Por la gestión financiera:</p>
+<td><p><strong>Por la gestión financiera</strong>:</p>
 <ul>
 <li><p>Uso intensivo de factoring, dada una estructura de cupos de crédito internos, para evitar
 la detención de ventas cuando los clientes los copan y pagan entre 30 a 60 días, es decir, mantener
