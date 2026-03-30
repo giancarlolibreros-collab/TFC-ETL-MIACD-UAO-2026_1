@@ -27,7 +27,14 @@ from src.transformacion import (
     resumen_transformacion
 )
 
-# from src.carga import (...)           # Se habilitará en la siguiente fase
+from src.carga import (
+    crear_conexion,
+    cargar_tabla_hechos,
+    verificar_carga,
+    resumen_carga,
+    RUTA_BD,
+    TABLA_HECHOS
+)
 
 import pandas as pd
 
@@ -63,10 +70,11 @@ def fase_transformacion(df_sobregiro, df_factoring):
 # FASE 3 - CARGA
 # =============================================================================
 
-def fase_carga():
-    """Ejecuta la fase de carga. Se habilitará en la siguiente fase."""
-    pass  # TODO: invocar funciones de carga.py
-
+def fase_carga(df_hechos):
+    engine = crear_conexion(RUTA_BD)
+    cargar_tabla_hechos(df_hechos, engine)
+    verificar_carga(engine)
+    resumen_carga(engine)
 
 # =============================================================================
 # EJECUCIÓN PRINCIPAL
@@ -85,5 +93,7 @@ if __name__ == "__main__":
     df_sobregiro, df_factoring, df_tasas, df_cupos = fase_extraccion()
     df_hechos = fase_transformacion(df_sobregiro, df_factoring)
 
-    # Fase 3 — se habilitará en la siguiente fase
-    # fase_carga()
+    # Fase 3
+    df_sobregiro, df_factoring, df_tasas, df_cupos = fase_extraccion()
+    df_hechos = fase_transformacion(df_sobregiro, df_factoring)
+    fase_carga(df_hechos)
