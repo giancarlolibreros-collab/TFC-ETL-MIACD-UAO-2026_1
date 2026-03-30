@@ -43,7 +43,6 @@ def normalizar_nombre(nombre: str) -> str:
     base = base.strip('_')
     return base + ext.lower()
 
-
 def renombrar_archivos(carpeta: str):
     """
     Recorre una carpeta y renombra los archivos según la normativa.

@@ -44,7 +44,6 @@ def clasificar_instrumento(descripcion: str) -> str:
     else:
         return 'OTRO'
 
-
 # =============================================================================
 # UTILIDAD: CALCULAR COSTO DIARIO ESTIMADO
 # Fórmula: Costo_Diario = Valor * ((1 + Tasa_EA)^(1/365) - 1)
