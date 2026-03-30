@@ -19,7 +19,14 @@ from src.extraccion import (
     RUTA_TASAS,
     RUTA_COMISIONES
 )
-# from src.transformacion import (...)  # Se habilitará en la siguiente fase
+
+from src.transformacion import (
+    transformar_intereses_sobregiro,
+    transformar_comisiones_factoring,
+    consolidar_tabla_hechos,
+    resumen_transformacion
+)
+
 # from src.carga import (...)           # Se habilitará en la siguiente fase
 
 import pandas as pd
@@ -45,9 +52,12 @@ def fase_extraccion():
 # FASE 2 - TRANSFORMACIÓN
 # =============================================================================
 
-def fase_transformacion(df_sobregiro, df_factoring, df_tasas, df_cupos):
-    """Ejecuta la fase de transformación. Se habilitará en la siguiente fase."""
-    pass  # TODO: invocar funciones de transformacion.py
+def fase_transformacion(df_sobregiro, df_factoring):
+    df_sob_t  = transformar_intereses_sobregiro(df_sobregiro)
+    df_fac_t  = transformar_comisiones_factoring(df_factoring)
+    df_hechos = consolidar_tabla_hechos(df_sob_t, df_fac_t)
+    resumen_transformacion(df_hechos)
+    return df_hechos
 
 # =============================================================================
 # FASE 3 - CARGA
@@ -71,8 +81,9 @@ if __name__ == "__main__":
     # Fase 1
     df_sobregiro, df_factoring, df_tasas, df_cupos = fase_extraccion()
 
-    # Fase 2 — se habilitará en la siguiente fase
-    # fase_transformacion(df_sobregiro, df_factoring, df_tasas, df_cupos)
+    # Fase 2
+    df_sobregiro, df_factoring, df_tasas, df_cupos = fase_extraccion()
+    df_hechos = fase_transformacion(df_sobregiro, df_factoring)
 
     # Fase 3 — se habilitará en la siguiente fase
     # fase_carga()
