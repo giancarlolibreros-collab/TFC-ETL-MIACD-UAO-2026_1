@@ -58,7 +58,6 @@ def calcular_costo_diario(valor: float, tasa_ea: float) -> float:
         return None
     return valor * ((1 + tasa_ea) ** (1 / 365) - 1)
 
-
 # =============================================================================
 # TRANSFORMACIÓN - FUENTE 1: Intereses por Sobregiro
 # =============================================================================
@@ -122,7 +121,6 @@ def transformar_intereses_sobregiro(df: pd.DataFrame) -> pd.DataFrame:
     print(f"  Total valor (COP)       : ${df['Valor_Neto_Pesos'].sum():,.0f}")
     print()
     return df
-
 
 # =============================================================================
 # TRANSFORMACIÓN - FUENTE 2: Comisiones por Factoring
@@ -188,7 +186,6 @@ def transformar_comisiones_factoring(df: pd.DataFrame) -> pd.DataFrame:
     print()
     return df
 
-
 # =============================================================================
 # CONSOLIDACIÓN: TABLA DE HECHOS FINAL
 # =============================================================================
@@ -217,9 +214,8 @@ def consolidar_tabla_hechos(df_sobregiro: pd.DataFrame,
     print()
     return df_consolidado
 
-
 # =============================================================================
-# RESUMEN GENERAL DE TRANSFORMACIÓN
+# RESUMEN GENERAL DE LA TRANSFORMACIÓN
 # =============================================================================
 
 def resumen_transformacion(df: pd.DataFrame):
@@ -247,7 +243,6 @@ def resumen_transformacion(df: pd.DataFrame):
           f"{(df['Tasa_EA_Entidad'] * df['Valor_Neto_Pesos']).sum() / df['Valor_Neto_Pesos'].sum():.2%}")
     print(f"  Método de transformación       : pandas")
     print("=" * 60)
-
 
 # =============================================================================
 # EJECUCIÓN DIRECTA - PRUEBA UNITARIA DEL MÓDULO
