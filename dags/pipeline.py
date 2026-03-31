@@ -19,14 +19,12 @@ from src.extraccion import (
     RUTA_TASAS,
     RUTA_COMISIONES
 )
-
 from src.transformacion import (
     transformar_intereses_sobregiro,
     transformar_comisiones_factoring,
     consolidar_tabla_hechos,
     resumen_transformacion
 )
-
 from src.carga import (
     crear_conexion,
     cargar_tabla_hechos,
@@ -35,7 +33,6 @@ from src.carga import (
     RUTA_BD,
     TABLA_HECHOS
 )
-
 from src.visualizacion import (
     crear_carpeta_reportes,
     cargar_datos,
@@ -55,23 +52,17 @@ from src.visualizacion import (
     RUTA_REPORTES
 )
 
-import pandas as pd
-
 # =============================================================================
 # FASE 1 - EXTRACCIÓN
 # =============================================================================
 
 def fase_extraccion():
     """Ejecuta la fase de extracción y retorna los dataframes extraídos."""
-
     renombrar_archivos(CARPETA_RAW)
-
     df_sobregiro       = extraer_intereses_sobregiro(RUTA_SOBREGIRO)
     df_factoring       = extraer_comisiones_factoring(RUTA_COMISIONES)
     df_tasas, df_cupos = extraer_tasas_sobregiro(RUTA_TASAS)
-
     resumen_extraccion(df_sobregiro, df_factoring, df_tasas)
-
     return df_sobregiro, df_factoring, df_tasas, df_cupos
 
 # =============================================================================
@@ -79,6 +70,7 @@ def fase_extraccion():
 # =============================================================================
 
 def fase_transformacion(df_sobregiro, df_factoring):
+    """Ejecuta la fase de transformación y retorna la tabla de hechos."""
     df_sob_t  = transformar_intereses_sobregiro(df_sobregiro)
     df_fac_t  = transformar_comisiones_factoring(df_factoring)
     df_hechos = consolidar_tabla_hechos(df_sob_t, df_fac_t)
@@ -90,6 +82,7 @@ def fase_transformacion(df_sobregiro, df_factoring):
 # =============================================================================
 
 def fase_carga(df_hechos):
+    """Ejecuta la fase de carga en la base de datos SQLite."""
     engine = crear_conexion(RUTA_BD)
     cargar_tabla_hechos(df_hechos, engine)
     verificar_carga(engine)
@@ -100,6 +93,7 @@ def fase_carga(df_hechos):
 # =============================================================================
 
 def fase_visualizacion():
+    """Ejecuta la fase de visualización y genera los reportes."""
     crear_carpeta_reportes(RUTA_REPORTES)
     df = cargar_datos(RUTA_BD)
 
@@ -127,23 +121,10 @@ def fase_visualizacion():
 
 if __name__ == "__main__":
     print()
-    print("  PIPELINE ETL - EMPRESA")
+    print("  PIPELINE ETL - INGENIO CARMELITA S.A.")
     print("  Ejecución completa de la canalización")
     print()
 
-    # Fase 1
-    df_sobregiro, df_factoring, df_tasas, df_cupos = fase_extraccion()
-
-    # Fase 2
-    df_sobregiro, df_factoring, df_tasas, df_cupos = fase_extraccion()
-    df_hechos = fase_transformacion(df_sobregiro, df_factoring)
-
-    # Fase 3
-    df_sobregiro, df_factoring, df_tasas, df_cupos = fase_extraccion()
-    df_hechos = fase_transformacion(df_sobregiro, df_factoring)
-    fase_carga(df_hechos)
-
-    # Fase 4
     df_sobregiro, df_factoring, df_tasas, df_cupos = fase_extraccion()
     df_hechos = fase_transformacion(df_sobregiro, df_factoring)
     fase_carga(df_hechos)
