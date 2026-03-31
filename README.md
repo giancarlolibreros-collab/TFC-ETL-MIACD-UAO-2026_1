@@ -5,27 +5,31 @@ Este repositorio se usa para alojar y permitir el desarrollo colaborativo, y con
 TFC-ETL-MIACD-UAO-2026_1/
 │
 ├── data/
-│   ├── raw/
-│   └── processed/
-│
-├── src/
-│   ├── extraccion.py
-│   ├── transformacion.py
-│   └── carga.py
+│   ├── processed/
+│   └── raw/
 │
 ├── dags/
 │   └── pipeline.py
 │
 ├── docs/
+│   ├── reportes/
 │   ├── Caracterizacion_Fuentes_de_Datos.md
 │   ├── Definicion_del_Problema.md
 │   ├── Estado_del_Arte.md
 │   └── Stack_Tecnologico.md
 │
+├── src/
+│   ├── utils/
+│   │   ├── timer.py
+│   ├── carga.py
+│   ├── extraccion.py
+│   ├── transformacion.py
+│   └── visualizacion.py
+│
 ├── .gitignore
 ├── LICENSE
-├── requirements.txt
-└── README.md
+├── README.md
+└── requirements.txt
 ```
 NOTA: por confidencialidad la carpeta `data/` carece de versionado.
 ## What the project does :: ¿Qué hace el proyecto?
