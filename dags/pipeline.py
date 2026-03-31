@@ -8,6 +8,8 @@ import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
+from src.utils.timer import imprimir_tabla_metricas, exportar_metricas
+
 from src.extraccion import (
     renombrar_archivos,
     extraer_intereses_sobregiro,
@@ -129,3 +131,7 @@ if __name__ == "__main__":
     df_hechos = fase_transformacion(df_sobregiro, df_factoring)
     fase_carga(df_hechos)
     fase_visualizacion()
+
+    # Métricas de desempeño
+    imprimir_tabla_metricas()
+    exportar_metricas()

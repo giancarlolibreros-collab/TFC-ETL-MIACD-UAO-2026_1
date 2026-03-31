@@ -7,6 +7,7 @@
 import pandas as pd
 import warnings
 warnings.filterwarnings('ignore')
+from src.utils.timer import registrar
 
 # =============================================================================
 # MAPEO DE TASAS EA POR ENTIDAD
@@ -61,6 +62,7 @@ def calcular_costo_diario(valor: float, tasa_ea: float) -> float:
 # TRANSFORMACIÓN - FUENTE 1: Intereses por Sobregiro
 # =============================================================================
 
+@registrar(fase="TRANSFORMACIÓN", componente="Intereses Sobregiro")
 def transformar_intereses_sobregiro(df: pd.DataFrame) -> pd.DataFrame:
     """
     Transforma el dataframe de intereses por sobregiro a la estructura
@@ -125,6 +127,7 @@ def transformar_intereses_sobregiro(df: pd.DataFrame) -> pd.DataFrame:
 # TRANSFORMACIÓN - FUENTE 2: Comisiones por Factoring
 # =============================================================================
 
+@registrar(fase="TRANSFORMACIÓN", componente="Comisiones Factoring")
 def transformar_comisiones_factoring(df: pd.DataFrame) -> pd.DataFrame:
     """
     Transforma el dataframe de comisiones por factoring a la estructura
@@ -189,6 +192,7 @@ def transformar_comisiones_factoring(df: pd.DataFrame) -> pd.DataFrame:
 # CONSOLIDACIÓN: TABLA DE HECHOS FINAL
 # =============================================================================
 
+@registrar(fase="TRANSFORMACIÓN", componente="Consolidación Hechos")
 def consolidar_tabla_hechos(df_sobregiro: pd.DataFrame,
                              df_factoring: pd.DataFrame) -> pd.DataFrame:
     """

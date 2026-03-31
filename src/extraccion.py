@@ -11,6 +11,7 @@ import openpyxl
 from datetime import datetime
 import warnings
 warnings.filterwarnings('ignore')
+from src.utils.timer import registrar
 
 # -----------------------------------------------------------------------------
 # CONFIGURACIÓN BASE
@@ -77,6 +78,7 @@ RUTA_COMISIONES = os.path.join(CARPETA_RAW, normalizar_nombre("COMISIONES AÑO 2
 # Filtro            : Se extrae únicamente la subcuenta 'INTERESES POR SOBREGIROS'.
 # =============================================================================
 
+@registrar(fase="EXTRACCIÓN", componente="Intereses Sobregiro")
 def extraer_intereses_sobregiro(ruta: str) -> pd.DataFrame:
     """
     Extrae los registros de intereses por sobregiro del archivo contable.
@@ -129,6 +131,7 @@ def extraer_intereses_sobregiro(ruta: str) -> pd.DataFrame:
 #                     'COMISIONES POR FACTORING'.
 # =============================================================================
 
+@registrar(fase="EXTRACCIÓN", componente="Comisiones Factoring")
 def extraer_comisiones_factoring(ruta: str) -> pd.DataFrame:
     """
     Extrae los registros de comisiones por factoring del libro de comisiones.
@@ -180,6 +183,7 @@ def extraer_comisiones_factoring(ruta: str) -> pd.DataFrame:
 #                     y cupos de crédito por entidad bancaria.
 # =============================================================================
 
+@registrar(fase="EXTRACCIÓN", componente="Tasas Sobregiro")
 def extraer_tasas_sobregiro(ruta: str) -> pd.DataFrame:
     """
     Extrae y estructura las tasas de sobregiro por entidad bancaria.

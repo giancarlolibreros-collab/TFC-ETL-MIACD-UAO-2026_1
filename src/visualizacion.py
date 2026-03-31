@@ -14,6 +14,7 @@ import os
 from sqlalchemy import create_engine
 from datetime import datetime
 warnings.filterwarnings('ignore')
+from src.utils.timer import registrar
 
 # -----------------------------------------------------------------------------
 # CONFIGURACIÓN GENERAL
@@ -72,6 +73,7 @@ def formato_cop(valor, pos=None):
 # KPI 1: GASTO ANUAL TOTAL POR INSTRUMENTO
 # =============================================================================
 
+@registrar(fase="VISUALIZACIÓN", componente="KPI 1 — Gasto por Instrumento")
 def grafico_kpi1_gasto_por_instrumento(df: pd.DataFrame, ruta: str):
     fig, ax = plt.subplots(figsize=(8, 5))
 
@@ -101,6 +103,7 @@ def grafico_kpi1_gasto_por_instrumento(df: pd.DataFrame, ruta: str):
 # KPI 2: GASTO MENSUAL POR INSTRUMENTO (LÍNEAS)
 # =============================================================================
 
+@registrar(fase="VISUALIZACIÓN", componente="KPI 2 — Gasto Mensual")
 def grafico_kpi2_gasto_mensual(df: pd.DataFrame, ruta: str):
     fig, ax = plt.subplots(figsize=(12, 5))
 
@@ -130,6 +133,7 @@ def grafico_kpi2_gasto_mensual(df: pd.DataFrame, ruta: str):
 # KPI 3: PARTICIPACIÓN PORCENTUAL POR INSTRUMENTO (TORTA)
 # =============================================================================
 
+@registrar(fase="VISUALIZACIÓN", componente="KPI 3 — Participación")
 def grafico_kpi3_participacion(df: pd.DataFrame, ruta: str):
     fig, ax = plt.subplots(figsize=(7, 7))
 
@@ -156,6 +160,7 @@ def grafico_kpi3_participacion(df: pd.DataFrame, ruta: str):
 # KPI 4: GASTO POR ENTIDAD FINANCIERA (BARRAS HORIZONTALES)
 # =============================================================================
 
+@registrar(fase="VISUALIZACIÓN", componente="KPI 4 — Gasto por Entidad")
 def grafico_kpi4_gasto_por_entidad(df: pd.DataFrame, ruta: str):
     fig, ax = plt.subplots(figsize=(10, 6))
 
@@ -182,6 +187,7 @@ def grafico_kpi4_gasto_por_entidad(df: pd.DataFrame, ruta: str):
 # KPI 5: TASA EA POR ENTIDAD FINANCIERA
 # =============================================================================
 
+@registrar(fase="VISUALIZACIÓN", componente="KPI 5 — Tasas EA")
 def grafico_kpi5_tasas_ea(df: pd.DataFrame, ruta: str):
     fig, ax = plt.subplots(figsize=(9, 5))
 
@@ -210,6 +216,7 @@ def grafico_kpi5_tasas_ea(df: pd.DataFrame, ruta: str):
 # KPI 6: COSTO DIARIO ESTIMADO POR ENTIDAD
 # =============================================================================
 
+@registrar(fase="VISUALIZACIÓN", componente="KPI 6 — Costo Diario")
 def grafico_kpi6_costo_diario(df: pd.DataFrame, ruta: str):
     fig, ax = plt.subplots(figsize=(10, 5))
 
@@ -239,6 +246,7 @@ def grafico_kpi6_costo_diario(df: pd.DataFrame, ruta: str):
 # KPI 7: GASTO TRIMESTRAL ACUMULADO (BARRAS APILADAS)
 # =============================================================================
 
+@registrar(fase="VISUALIZACIÓN", componente="KPI 7 — Gasto Trimestral")
 def grafico_kpi7_gasto_trimestral(df: pd.DataFrame, ruta: str):
     fig, ax = plt.subplots(figsize=(10, 5))
 
@@ -270,6 +278,7 @@ def grafico_kpi7_gasto_trimestral(df: pd.DataFrame, ruta: str):
 # PE 8: COSTO PROMEDIO POR PESO: FACTORING VS SOBREGIRO
 # =============================================================================
 
+@registrar(fase="VISUALIZACIÓN", componente="PE 8 — Costo por Peso")
 def grafico_pe8_costo_por_peso(df: pd.DataFrame, ruta: str):
     fig, ax = plt.subplots(figsize=(8, 5))
 
@@ -299,6 +308,7 @@ def grafico_pe8_costo_por_peso(df: pd.DataFrame, ruta: str):
 # PE 9: PUNTO DE EQUILIBRIO FACTORING VS SOBREGIRO
 # =============================================================================
 
+@registrar(fase="VISUALIZACIÓN", componente="PE 9 — Punto Equilibrio")
 def grafico_pe9_punto_equilibrio(df: pd.DataFrame, ruta: str):
     fig, ax = plt.subplots(figsize=(10, 6))
 
@@ -341,6 +351,7 @@ def grafico_pe9_punto_equilibrio(df: pd.DataFrame, ruta: str):
 # PE 10: SIMULACIÓN ESCENARIO PRONTO PAGO VS SITUACIÓN ACTUAL
 # =============================================================================
 
+@registrar(fase="VISUALIZACIÓN", componente="PE 10 — Pronto Pago")
 def grafico_pe10_escenario_pronto_pago(df: pd.DataFrame, ruta: str):
     fig, ax = plt.subplots(figsize=(9, 6))
 
@@ -380,6 +391,7 @@ def grafico_pe10_escenario_pronto_pago(df: pd.DataFrame, ruta: str):
 # PE 11: COMBINACIÓN ÓPTIMA DE INSTRUMENTOS
 # =============================================================================
 
+@registrar(fase="VISUALIZACIÓN", componente="PE 11 — Combinación Óptima")
 def grafico_pe11_combinacion_optima(df: pd.DataFrame, ruta: str):
     fig, ax = plt.subplots(figsize=(9, 6))
 
@@ -417,6 +429,7 @@ def grafico_pe11_combinacion_optima(df: pd.DataFrame, ruta: str):
 # PE 12: GASTO POR ENTIDAD VS TASA EA (SCATTER)
 # =============================================================================
 
+@registrar(fase="VISUALIZACIÓN", componente="PE 12 — Gasto vs Tasa EA")
 def grafico_pe12_gasto_vs_tasa(df: pd.DataFrame, ruta: str):
     fig, ax = plt.subplots(figsize=(10, 6))
 

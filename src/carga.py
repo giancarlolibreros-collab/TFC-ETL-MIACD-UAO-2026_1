@@ -9,6 +9,7 @@ from sqlalchemy import create_engine, text
 from datetime import datetime
 import warnings
 warnings.filterwarnings('ignore')
+from src.utils.timer import registrar
 
 # -----------------------------------------------------------------------------
 # CONFIGURACIÓN DE LA BASE DE DATOS
@@ -32,6 +33,7 @@ def crear_conexion(ruta_bd: str):
 # CARGA: TABLA DE HECHOS FINANCIERA
 # =============================================================================
 
+@registrar(fase="CARGA", componente="Tabla Hechos → SQLite")
 def cargar_tabla_hechos(df: pd.DataFrame, engine, tabla: str = TABLA_HECHOS):
     """
     Carga la tabla de hechos transformada en la base de datos SQLite.
@@ -64,6 +66,7 @@ def cargar_tabla_hechos(df: pd.DataFrame, engine, tabla: str = TABLA_HECHOS):
 # VERIFICACIÓN: CONSULTAS DE VALIDACIÓN POST-CARGA
 # =============================================================================
 
+@registrar(fase="CARGA", componente="Verificación Post-Carga")
 def verificar_carga(engine, tabla: str = TABLA_HECHOS):
     """
     Ejecuta consultas de validación para verificar que la carga
